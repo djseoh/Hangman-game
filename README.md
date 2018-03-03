@@ -1,0 +1,1 @@
+This is a hangman game that is useful for a unique type of hangman experience.
