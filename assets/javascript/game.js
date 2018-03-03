@@ -15,6 +15,7 @@ var wrongLetter = [];
 var guessesLeft = 10;
 var underScores = [];
 var userGuesses = [];
+var winCounter = 0;
 
 var pickedPhrase = phrases[Math.floor(Math.random() * phrases.length)];
 
@@ -49,6 +50,10 @@ document.onkeyup = function(event)
                     answerArray[i] = userGuess;
                     document.getElementById("goodGuess").innerHTML = answerArray.join("");
                     console.log(answerArray);
+                    if(answerArray === pickedPhrase){
+                        winCounter++;
+                        document.getElementById('wins').innerHTML = 'Wins: ' + winCounter;
+                    }
                 };
                 
             }
@@ -58,7 +63,7 @@ document.onkeyup = function(event)
             wrongLetter.push(userGuess);
             console.log(wrongLetter);             
             document.getElementById("bad-guess").innerHTML = wrongLetter.join("");
-            wrongGuess
+            document.getElementById('stickman')
         }
     };
 };

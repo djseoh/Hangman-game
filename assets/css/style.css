@@ -9,6 +9,9 @@
     font-size: 18px;
     text-align: center;
 }
+#relative{
+    position:relative;
+}
 #goodGuess{
     font-family: 'Coiny', cursive;
     font-size: 25px;
@@ -27,22 +30,17 @@
     width: 40%;
 }
 #volcano{
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .title {
     font-family: 'Coiny', cursive;
     font-size: 50px;
     text-align: center;
-
-    
-
     -webkit-animation:colorchange 20s infinite alternate;
-    
-    
   }
 
-  @-webkit-keyframes colorchange {
+@-webkit-keyframes colorchange {
     0% {
       
       color: red;
@@ -80,7 +78,7 @@
     
     70% {
       
-      color: #3f0303;
+      color: #6b0000;
     }
     80% {
    
@@ -89,11 +87,18 @@
     
     90% {
    
-      color: #f19409;
+      color: #ff9a04;
     }
     
     100% {
       
-      color: rgb(190, 6, 37);
+      color: rgb(255, 10, 51);
     }
   }
+.background{
+    background-color: rgb(88, 69, 47);
+  }
+.other-background{
+    background-color:rgba(255, 0, 0, .3);
+   
+}
