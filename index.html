@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hang-Man</title>
+    <!--RESET CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Google Fonts "Coiny"-->
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 class="title">The Floor is LAVA!!</h1>
+    </header>
+
+</body>
+ <div class="container">
+            <div class="row">
+                <div class="jumbotron col">
+                  <h3 class="secondary-title">Start guessing to play!</h3>
+                    <div>
+                        <h4 class="third-title">Letters guessed already</h4>
+                        <p id="bad-guess"></p>
+                    </div>
+                </div>
+                <div class="jumbotron col">
+                    <p id="goodGuess"></p>
+                </div>
+                <div class="jumbotron col">
+                        <h3 class ="secondary-title">Don't Fall in the Lava!</h3>
+                    <div>
+                        <img id="stickman" src="assets/images/stickman.svg">
+                    </div>
+                    <div>
+                        <img id="volcano" src="assets/images/volcano.svg">
+                    </div>
+                </div>
+            </div>
+    </div>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
